@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaf8ff;
+  color: #073b4c;
+}
+
+header {
+  text-align: center;
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.banner {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 20px 0 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #0033cc;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 35px;
+  color: #005f73;
+}
+
+p {
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #0033cc;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  max-width: 850px;
+  margin: 25px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+}
+
+.poster-card {
+  background-color: white;
+  border: 3px solid #0033cc;
+  border-radius: 12px;
+  width: 270px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 51, 204, 0.2);
+}
+
+.poster-card img {
+  width: 250px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.poster-card h3 {
+  margin-bottom: 5px;
+  color: #0033cc;
+}
+
+.poster-card a {
+  color: #005f73;
+  font-weight: bold;
+}
+
+.full-image-page {
+  max-width: 950px;
+  margin: 35px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 90%;
+  max-width: 900px;
+  border: 4px solid #0033cc;
+  border-radius: 12px;
+}
+
+figcaption {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #073b4c;
+}
+
+.contact-box {
+  max-width: 800px;
+  margin: 35px auto;
+  background-color: white;
+  border: 3px solid #0033cc;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.contact-box p {
+  font-size: 18px;
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 12px; 
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #0033cc;
+  color: white;
+  margin-top: 30px;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+}
