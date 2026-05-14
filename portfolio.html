@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayden Grubbs | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <ul id="nav_tabs">
+        <li class="splash">
+            <a href="#splash">
+                <div id="profile_photo">
+                    <img src="hayden.png" height="150" width="150" alt="Hayden Grubbs">
+                </div>
+                <div id="profile_name">
+                    <div class="profile_inner">
+                        <div class="name">Hayden Grubbs</div>
+                        <div class="pos">Journalist & Story Teller</div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <!-- Profile (a) -->
+        <li class="profile">
+            <a href="javascript:void(0)" onclick="toggleNav('info-a')">
+                <span class="icon">About Me</span>
+            </a>
+            <div id="info-a" class="nav-extra-info">
+                <p><strong>Bio:</strong> Dedicated journalist focusing on human-interest stories and investigative reporting.</p>
+            </div>
+        </li>
+
+        <!-- Portfolio (b) -->
+        <li class="portfolio">
+            <a href="javascript:void(0)" onclick="toggleNav('info-b')">
+                <span class="icon">Previous Work</span>
+            </a>
+            <div id="info-b" class="nav-extra-info">
+                <p><strong>Works:</strong> Published in OU Daily, OU Nightly and News on 6.</p>
+            </div>
+        </li>
+
+        <!-- Contacts (c) -->
+        <li class="contacts">
+            <a href="javascript:void(0)" onclick="toggleNav('info-c')">
+                <span class="icon">Contact</span>
+            </a>
+            <div id="info-c" class="nav-extra-info">
+                <p><strong>Reach Out:</strong> Available for freelance assignments and collaborations.</p>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Main Content Area -->
+    <div id="content-wrapper">
+        
+
+
+        <!-- Skills Section -->
+        <aside class="widget-skills">
+            <h3 class="widget_title">Media Skills</h3>
+            <div class="skills_row">
+                <span class="progressbar">
+                    <span class="progress" style="width: 100%; background-color: rgb(152, 118, 252);">
+                        <span class="caption">Print Writing and Editing</span>
+                    </span>
+                </span>
+            </div>
+            <div class="skills_row">
+                <span class="progressbar">
+                    <span class="progress" style="width: 100%; background-color: rgb(196, 118, 245);">
+                        <span class="caption">Broadcast Filming and Editing</span>
+                    </span>
+                </span>
+            </div>
+                        <div class="skills_row">
+                <span class="progressbar">
+                    <span class="progress" style="width: 100%; background-color: rgb(245, 118, 233);">
+                        <span class="caption">Digital Story Telling Skills</span>
+                    </span>
+                </span>
+            </div>
+        </aside>
+
+        <!-- Resume Section -->
+        <article class="post">
+            <div class="resume_header">
+                <h4 class="post_title">Experience</h4>
+                <h5 class="resume_position">News on 6 May 2025-August 2025</h5>
+                <h5 class="resume_position">OU Daily 2025-Present</h5>
+                <h5 class="resume_position">OU Nightly 2025-Present</h5>
+            </div>
+            <div class="resume_content">
+            </div>
+        </article>
+
+        <!-- Portfolio Item -->
+        <article class="portfolio_post">
+            <div class="post_pic">
+                <h4 class="post_title">Links to previous work</h4>
+                                <p><a href="https://www.oudaily.com/users/profile/hayden%20grubbs/">OU Daily</a></p>
+                                <p><a href=https://www.newson6.com/story/6880044c291026d5eb8e10af/why-are-catfish-wearing-green-tags-in-grand-lake->News on 6</a></p>
+            </div>
+        </article>
+
+        <!-- Contact Footer -->
+        <div class="footer_contact">
+            <span class="phone">+314 562 6079</span>
+            <span class="email">hayden.k.grubbs-1@ou.edu</span>
+            <span class="website"><a href="#">haydengrubbs.oucreate.com</a></span>
+            <img src="frame.png" height="150" width="150" alt="QR Code">
+        </div>
+
+    </div>
+
+    <!-- JavaScript for Expanding Tabs -->
+    <script>
+        function toggleNav(id) {
+            // Get the clicked info box
+            const infoBox = document.getElementById(id);
+            
+            // Check if it is currently open
+            const isAlreadyOpen = infoBox.classList.contains('open');
+
+            // Close ALL info boxes first
+            document.querySelectorAll('.nav-extra-info').forEach(box => {
+                box.classList.remove('open');
+            });
+
+            // If the one we clicked wasn't open, open it now
+            if (!isAlreadyOpen) {
+                infoBox.classList.add('open');
+            }
+        }
+    </script>
+
+</body>
+</html>

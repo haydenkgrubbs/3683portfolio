@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #0c0b35; /* Dark background from your original CSS */
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    color: #fff;
+    display: flex; /* Creates the sidebar/content split */
+}
+
+/* Sidebar Navigation */
+#nav_tabs {
+    background: #1e4475;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    border-right: 1px solid #514545;
+}
+
+#profile_photo img {
+    border-radius: 50%;
+    border: 3px solid #5f95a9;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#profile_name {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.pos {
+    color: #8c8c8c;
+    font-size: 14px;
+}
+
+#nav_tabs li a {
+    color: #dcdcdc;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #5d5d5d;
+    transition: 0.3s;
+}
+
+#nav_tabs li a:hover {
+    background: #191919;
+    color: #00abea;
+}
+
+/* Main Content Area */
+body > *:not(#nav_tabs) {
+    margin-left: 300px; /* Pushes content to the right of the sidebar */
+    padding: 40px;
+    width: 100%;
+}
+
+/* Progress Bars (Skills) */
+.widget_skills {
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.progressbar {
+    background: #333;
+    display: block;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress {
+    display: block;
+    height: 100%;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Portfolio Grid */
+.portfolio_post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio_post img:hover {
+    transform: scale(1.02);
+}
+
+/* Social Links */
+.social_links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.social_links a {
+    background: #252525;
+    color: #00abea;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #3b3b3b;
+}
+
+/* Footer / Contact Section */
+.footer_contact {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #3e3e3e;
+    display: grid;
+    gap: 10px;
+}
+
+.footer_contact span {
+    color: #8c8c8c;
+}
+
+.footer_contact a {
+    color: #00abea;
+}
